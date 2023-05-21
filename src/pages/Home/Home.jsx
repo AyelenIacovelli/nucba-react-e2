@@ -7,10 +7,10 @@ const Home = () => {
             <HomeTitle>INDEX</HomeTitle>
             <HomeParrafo>No olvides hacer la tarea!</HomeParrafo>
             <LinksContainer>
-                <LinkPage>
+                <LinkPage to={"/todolist"}>
                     Checkeá tu lista de tareas
                 </LinkPage>
-                <LinkPage>
+                <LinkPage to={"/pokeapi"}>
                     Estudiá la Pokedex
                 </LinkPage>
             </LinksContainer>

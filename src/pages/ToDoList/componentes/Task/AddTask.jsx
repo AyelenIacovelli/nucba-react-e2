@@ -7,6 +7,21 @@ const AddTask = ({ handleAdd }) => {
     const [nameTask, setNameTask] = useState('');
     const [errorForm, setErrorForm] = useState(false);
 
+
+
+    //INTENTÉ QUE LAS TAREAS PERMANEZCAN EN LOCAL STORAGE DE DISTINTAS MANERAS, PERO ALGO MAL HAGO. POR FAVOR, PODRIAN EXPLICARME COMO SE HACE CON MI CODIGO?
+    // const [tasks, setTasks] = useState(() => {
+    //     const storedTasks = localStorage.getItem("tasks");
+    //     return storedTasks ? JSON.parse(storedTasks) : [];
+    //   });
+    //   useEffect(() => {
+    //     localStorage.setItem("tasks", JSON.stringify(tasks));
+    //   }, [tasks]);
+
+
+
+
+
     const handleSubmit = (e) => {
         e.preventDefault();
 

@@ -9,4 +9,8 @@ export const LayoutContainerStyled = styled.div`
 
 export const ContentContainerStyled = styled.div`
     height: calc(100vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 `

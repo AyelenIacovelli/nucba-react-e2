@@ -2,11 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import ToDoListState from './pages/ToDoList/componentes/context/ToDoListState';
+import { Provider } from "react-redux";
+import { store } from "./pages/Pokeapi/redux/store"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    
+    <ToDoListState>
+      <Provider store={store}>
+        <App />
+      </Provider>
+    </ToDoListState>
+    
   </React.StrictMode>
 );
 

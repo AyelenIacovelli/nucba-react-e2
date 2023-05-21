@@ -13,6 +13,7 @@ export const TaskForm = styled.form`
     border-radius: 1rem;
     gap: 10px;
     width: 100vw;
+    max-width: 1000px;
 `
 
 export const TaskInput = styled.input`
